@@ -3,13 +3,14 @@ function lowerCaseWords(arr) {
         if (!Array.isArray(arr)) {
             return reject(new Error('Input must be an array'));
         }
-        
         const result = arr
-            .filter(item => typeof item === 'string') // filter non strings
-            .map(item => item.toLowerCase()); // convert to lowercase
-        
+            .filter(item => typeof item === 'string')
+            .map(item => item.toLowerCase());
         resolve(result);
     });
 }
 
-module.exports = lowerCaseWords;
+
+lowerCaseWords(['Hello', 'WORLD', 123, true, 'JavaScript'])
+    .then(result => console.log(result))
+    .catch(error => console.error(error));
