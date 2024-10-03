@@ -11,6 +11,7 @@ function lowerCaseWords(arr) {
 }
 
 
-lowerCaseWords(['Hello', 'WORLD', 123, true, 'JavaScript'])
+lowerCaseWords(['PIZZA', 10, true, 25, false, 'Wings'])
     .then(result => console.log(result))
     .catch(error => console.error(error));
+
