@@ -3,7 +3,6 @@ const path = require('path');
 
 const logDir = path.join(__dirname, 'Logs');
 
-// Remove logs if the directory exists
 if (fs.existsSync(logDir)) {
     fs.readdirSync(logDir).forEach(file => {
         console.log(`Deleting file: ${file}`);

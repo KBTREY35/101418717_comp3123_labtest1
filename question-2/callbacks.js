@@ -14,11 +14,3 @@ function rejectedPromise() {
     });
 }
 
-// Test cases to see output
-resolvedPromise()
-    .then(message => console.log(message))
-    .catch(error => console.error(error));
-
-rejectedPromise()
-    .then(message => console.log(message))
-    .catch(error => console.error(error));
