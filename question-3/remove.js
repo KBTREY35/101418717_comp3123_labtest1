@@ -9,7 +9,6 @@ if (fs.existsSync(logDir)) {
         fs.unlinkSync(path.join(logDir, file));
     });
     
-    // Remove the Logs directory
     fs.rmdirSync(logDir);
     console.log('Logs directory deleted.');
 } else {
